@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my css1</title>
+    <link rel="stylesheet" href="mycss3.css">
+</head>
+<body>
+<div id="mhmove" style="overflow:hidden;width:800px;margin:0 auto 0;">
+    <table width="800px" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+
+      <td width="800px" id="mhmove1"><table width="800px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+
+
+        <td width="166" align="center"><img src="http://i2.sinaimg.cn/hs/2011/1110/U5018P1030DT20111110090026.jpg" width="166" height="117" border="0" usemap="#Map2" /></td>
+
+          <td width="166" align="center"> <img src="https://static-news.17house.com/web/news/201511/04/201511041038471115.png!w630" width="166" height="117" border="0" usemap="#Map"/></td>
+
+
+          <td width="166" align="center"><img src="https://static-news.17house.com/web/news/201610/11/201610112117477846.png!w630" width="166" height="117" border="0" usemap="#Map3" /></td>
+
+          <td width="166" align="center"><img src="https://static-news.17house.com/web/news/201409/16/201409160957498241.jpg!shuiyin" width="166" height="117" border="0" usemap="#Map4"  /></td>
+
+          <td width="172" align="center"><img src="http://img.vlongbiz.com/member2011/wu224839/1294129051.jpg" width="166" height="117" border="0" usemap="#Map5"  /></td>
+
+    <td width="172" align="center"><img src="http://pic7.nipic.com/20100504/4858749_133327082081_2.jpg" width="166" height="117" border="0" usemap="#Map6" /></td>
+       </tr>
+
+      </table></td>
+      <td width="50" id="mhmove2">&nbsp;</td>
+    </tr>
+  </table>
+   </div>
+          <script>
+    var speed=40 ;
+    mhmove2.innerHTML=mhmove1.innerHTML;
+    function Marquee3(){
+     if(mhmove2.offsetWidth-mhmove.scrollLeft<=0)
+      mhmove.scrollLeft-=mhmove1.offsetWidth;
+     else{
+      mhmove.scrollLeft++;
+     }
+    }
+    function Marquee4(){
+     if(mhmove2.offsetHeight-mhmove.scrollTop<=0)
+      mhmove.scrollTop-=mhmove1.offsetHeight;
+     else{
+      mhmove.scrollTop++;
+     }
+    }
+    var MyMar2=setInterval(Marquee3,speed);
+    mhmove.οnmοuseοver=function() {clearInterval(MyMar2)}
+    mhmove.οnmοuseοut=function() {MyMar2=setInterval(Marquee3,speed)}
+   </script>
+</body>
+</html>
